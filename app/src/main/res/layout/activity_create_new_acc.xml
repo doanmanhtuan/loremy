@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:background="#106e33"
+        android:textAllCaps="false"
+        android:text="Tạo tài khoản mới"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:drawableLeft="@drawable/arrow"/>
+    <EditText
+        android:id="@+id/edtEmail_Create_New_Acc"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_clear"
+        android:hint="  Email" />
+
+    <EditText
+        android:id="@+id/edtPass_Create_New_Acc"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_clear"
+        android:hint="  Mật khẩu" />
+
+    <EditText
+        android:id="@+id/edtNhap_Lai_MK"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button_clear"
+        android:hint="  Nhập lại mật khẩu" />
+
+    <Button
+        android:id="@+id/btnGuiLaiMK"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="GỬI MAIL"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+</LinearLayout>
