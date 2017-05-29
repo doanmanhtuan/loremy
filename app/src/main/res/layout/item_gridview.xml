@@ -71,7 +71,6 @@
                     android:layout_marginRight="5dp"
                     android:src="@drawable/shop"/>
             </LinearLayout>
-
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

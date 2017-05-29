@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF"
     android:orientation="vertical">
 
     <ImageView
@@ -11,6 +12,7 @@
         android:src="@drawable/icon" />
 
     <ImageView
+        android:id="@+id/imgAvatar"
         android:layout_width="350dp"
         android:layout_height="232dp"
         android:layout_gravity="center"
@@ -19,7 +21,7 @@
 
     <LinearLayout
         android:layout_width="150dp"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:background="@drawable/custom_layout"
@@ -27,21 +29,21 @@
 
         <RelativeLayout
             android:layout_width="150dp"
-            android:layout_height="1dp"
+            android:layout_height="2dp"
             android:orientation="horizontal">
 
             <View
-                android:layout_width="40dp"
-                android:layout_height="1dp"
+                android:layout_width="35dp"
+                android:layout_height="2dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="2dp"
                 android:background="#106e33" />
 
             <View
                 android:layout_width="40dp"
-                android:layout_height="1dp"
+                android:layout_height="2dp"
                 android:layout_alignParentRight="true"
-                android:layout_marginRight="5dp"
+                android:layout_marginRight="2dp"
                 android:background="#106e33" />
         </RelativeLayout>
 
@@ -58,11 +60,14 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/tvpPrice"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="2"
+                android:layout_weight="3"
                 android:gravity="center"
-                android:text="55.000 VND" />
+                android:text="55.000"
+                android:textSize="18sp"
+                android:textColor="#000"/>
 
             <LinearLayout
                 android:layout_width="0dp"

@@ -1,11 +1,13 @@
 package com.example.admin.loremy.activites;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import com.example.admin.loremy.adapter.MenuAdapter;
 import com.example.admin.loremy.data.MenuData;
@@ -45,7 +47,12 @@ public class Activity_Menu extends AppCompatActivity {
         gvMeNu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Intent intent = new Integer(Activity_Menu.th)
+                Intent intent = new Intent(Activity_Menu.this, Activity_Detail_Menu.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("price", menuAdapter.getItem(position).itemPrice);
+                bundle.putString("imgurl", menuArray.get(position).itemImageUrl.imageUrl);
+                intent.putExtras(bundle);
+                startActivity(intent);
             }
         });
         getMenu();

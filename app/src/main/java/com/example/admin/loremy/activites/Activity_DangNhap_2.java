@@ -19,7 +19,7 @@ public class Activity_DangNhap_2 extends AppCompatActivity {
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dangnhap_2);
-        getSupportActionBar().hide();
+//        getSupportActionBar().hide();
         init();
     }
 

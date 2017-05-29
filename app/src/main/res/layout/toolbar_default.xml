@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:theme="@style/AppTheme.AppBarOverlay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/btnBack"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/bg_btn_default">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:tint="@android:color/white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvTitleToolbar"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_nomal"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize">
+
+            <RelativeLayout
+                android:id="@+id/btnOrder"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/bg_btn_default"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_shopping_cart_black_24dp"
+                    android:tint="@android:color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.AppBarLayout>
